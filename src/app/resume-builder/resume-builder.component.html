@@ -1,0 +1,198 @@
+<body id="top">
+  <div id="cv" class="instaFade">
+    <div class="mainDetails" *ngIf="resumedata" id="maindetails">
+      <!-- <div id="headshot" class="quickFade text-center">
+        <img src="../../assets/headshot.jpg" alt="Alan Smith" />
+      </div> -->
+
+      <div id="allMains">
+        <!-- <div id="name" class="quickFade delayTwo">
+          <h1>{{ resumedata.fullname }}</h1>
+        </div> -->
+
+        <!-- <div id="contactDetails" class="quickFade delayFour">
+          <ul>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"
+                >: {{ resumedata.email }}</i
+              >
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true">
+                :{{ resumedata.phone }}</i
+              >
+            </li>
+            <li>
+              <i class="fa fa-linkedin" aria-hidden="true"
+                >: {{ resumedata.linkedin }}</i
+              >
+            </li>
+          </ul>
+        </div> -->
+        
+        
+        <div class="clear"></div>
+        <div id="mainArea" class="quickFade delayFive">
+          <section>
+            <article>
+              <div class="sectionTitle">
+                <h1> FullName:</h1>
+              </div>
+
+              <div class="sectionContent text-center">
+                <h3>
+                  {{ resumedata.fullname }}
+                </h3>
+              </div>
+            </article>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <article>
+              <div class="sectionTitle">
+                <h1>Email:</h1>
+              </div>
+
+              <div class="sectionContent">
+                <p>
+                  {{ resumedata.email }}
+                </p>
+              </div>
+            </article>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <article>
+              <div class="sectionTitle">
+                <h1>Phone:</h1>
+              </div>
+
+              <div class="sectionContent">
+                <p>
+                  {{ resumedata.phone }}
+                </p>
+              </div>
+            </article>
+            <div class="clear"></div>
+          </section>
+          <section>
+            <article>
+              <div class="sectionTitle">
+                <h1>LinkedId:</h1>
+              </div>
+
+              <div class="sectionContent">
+                <p>
+                  {{ resumedata.linkedin }}
+                </p>
+              </div>
+            </article>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <article>
+              <div class="sectionTitle">
+                <h1>Personal Profile</h1>
+              </div>
+
+              <div class="sectionContent">
+                <p>
+                  {{ resumedata.profile }}
+                </p>
+              </div>
+            </article>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <div class="sectionTitle">
+              <h1>Work Experience</h1>
+            </div>
+
+            <div class="sectionContent">
+              <article>
+                <!-- <h2>Job Title at Company</h2>
+              <p class="subDetails">April 2011 - Present</p> -->
+                <p>
+                  {{ resumedata.experience }}
+                </p>
+              </article>
+            </div>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <div class="sectionTitle">
+              <h1>Key Skills</h1>
+            </div>
+
+            <div class="sectionContent">
+              <ul class="keySkills">
+                <li>{{ resumedata.keyskill1 }}</li>
+                <li>{{ resumedata.keyskill2 }}</li>
+                <li>{{ resumedata.keyskill3 }}</li>
+                <li>{{ resumedata.keyskill4 }}</li>
+                <li>{{ resumedata.keyskill5 }}</li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <div class="sectionTitle">
+              <h1>Projects</h1>
+            </div>
+
+            <div class="sectionContent">
+              <p>{{ resumedata.project }}</p>
+            </div>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <div class="sectionTitle">
+              <h1>Certifications</h1>
+            </div>
+
+            <div class="sectionContent">
+              <p>{{ resumedata.certification }}</p>
+            </div>
+            <div class="clear"></div>
+          </section>
+
+          <section>
+            <div class="sectionTitle">
+              <h1>Education</h1>
+            </div>
+
+            <div class="sectionContent">
+              <article>
+                <h2>School</h2>
+                <p>
+                  {{ resumedata.school }}
+                </p>
+              </article>
+
+              <article>
+                <h2>College/University</h2>
+                <p class="subDetails">Qualification</p>
+                <p>
+                  {{ resumedata.college }}
+                </p>
+              </article>
+            </div>
+            <div class="clear"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-info text-center" (click)="downloadpdf()">
+        Download as PDF
+      </button>
+    </div>
+  </div>
+</body>
